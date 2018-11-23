@@ -6,8 +6,8 @@
 
 --- Adjustments by: ---
   * Andronikos Koutroumpelis, researcher at Ellinika Hoaxes (http://ellinikahoaxes.gr)
-  * Greek Hoaxes Detector v1.0 (github)
-  * Licensed under LGPL-3.0 (link)
+  * Greek Hoaxes Detector v1.0 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector)
+  * Licensed under LGPL-3.0 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector/blob/master/LICENSE)
  */
 
 /*global chrome,browser,self,top,console,$,JSON,MutationObserver*/
