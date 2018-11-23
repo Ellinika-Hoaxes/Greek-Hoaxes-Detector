@@ -68,9 +68,9 @@
 
 .bs-alert a,.bs-alert a:visited, .bs-alert a:link {
   text-decoration: underline;
-  color: #fcff00;
+  color: #fcff00 !important;
 }
 
 .bs-alert a:hover {
-  color: #ccd718;
+  color: #ccd718 !important;
 }
