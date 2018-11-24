@@ -306,6 +306,7 @@ BSDetector.prototype = {
         if (this.dataType === 'caution') {
             this.warnMessage = '⚠️ ΠΡΟΣΟΧΗ: Η ΠΗΓΗ ΜΠΟΡΕΙ ΝΑ ΕΙΝΑΙ ΑΞΙΟΠΙΣΤΗ ΑΛΛΑ ΤΑ ΠΕΡΙΕΧΟΜΕΝΑ ΧΡΕΙΑΖΟΝΤΑΙ ΕΠΙΠΛΕΟΝ ΕΞΑΚΡΙΒΩΣΗ';
         } else {
+          sleep(1000);
             this.warnMessage = '⚠️ ΠΡΟΣΟΧΗ: ΠΙΘΑΝΗ ΑΝΑΞΙΟΠΙΣΤΙΑ ΠΗΓΗΣ (' + classType + ')';
             this.articles = ' | <a target="_blank" href="http://ellinikahoaxes.gr/?s=' + this.currentUrl + '">ΠΑΡΑΔΕΙΓΜΑΤΑ ΑΡΘΡΩΝ</a>';
         }
