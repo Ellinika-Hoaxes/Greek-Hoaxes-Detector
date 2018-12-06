@@ -1,7 +1,7 @@
 {
   "name": "Greek Hoaxes Detector",
   "short_name" : "GHD",
-  "version": "1.1.2",
+  "version": "1.2",
   "manifest_version": 2,
   "default_locale": "en",
   "description": "Προειδοποιεί για ελληνικές πηγές ενημέρωσης που έχουν υπάρξει αναξιόπιστες.",
