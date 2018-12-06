@@ -72,12 +72,6 @@
     "3rd type" : "",
     "Source Notes (things to know?)" : ""
   },
-  "igata.gr" : {
-    "type" : "con",
-    "2nd type" : "",
-    "3rd type" : "",
-    "Source Notes (things to know?)" : ""
-  },
   "allnewz.gr" : {
     "type" : "con",
     "2nd type" : "",
@@ -188,7 +182,7 @@
     "3rd type" : "",
     "Source Notes (things to know?)" : ""
   },
-  "Makeleio.gr" : {
+  "makeleio.gr" : {
     "type" : "mis",
     "2nd type" : "",
     "3rd type" : "",

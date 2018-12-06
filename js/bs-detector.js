@@ -6,7 +6,7 @@
 
 --- Adjustments by: ---
   * Andronikos Koutroumpelis, researcher at Ellinika Hoaxes (http://ellinikahoaxes.gr)
-  * Greek Hoaxes Detector v1.0 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector)
+  * Greek Hoaxes Detector v1.1.2 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector)
   * Licensed under LGPL-3.0 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector/blob/master/LICENSE)
  */
 
@@ -305,7 +305,7 @@ BSDetector.prototype = {
         if (this.dataType === 'caution') {
             this.warnMessage = '⚠️ ΠΡΟΣΟΧΗ: Η ΠΗΓΗ ΜΠΟΡΕΙ ΝΑ ΕΙΝΑΙ ΑΞΙΟΠΙΣΤΗ ΑΛΛΑ ΤΑ ΠΕΡΙΕΧΟΜΕΝΑ ΧΡΕΙΑΖΟΝΤΑΙ ΕΠΙΠΛΕΟΝ ΕΞΑΚΡΙΒΩΣΗ';
         } else {
-            this.warnMessage = '⚠️ ΠΡΟΣΟΧΗ: ΠΙΘΑΝΗ ΑΝΑΞΙΟΠΙΣΤΙΑ ΠΗΓΗΣ (' + classType + ')';
+            this.warnMessage = '⚠️ ΠΡΟΣΟΧΗ: Η ΠΗΓΗ ΕΧΕΙ ΥΠΑΡΞΕΙ ΑΝΑΞΙΟΠΙΣΤΗ (' + classType + ')';
             this.articles = ' | <a target="_blank" href="http://ellinikahoaxes.gr/?s=' + this.currentUrl + '">ΠΑΡΑΔΕΙΓΜΑΤΑ ΑΡΘΡΩΝ</a>';
         }
 

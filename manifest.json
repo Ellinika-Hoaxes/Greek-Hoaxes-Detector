@@ -3,8 +3,8 @@
   "short_name" : "GHD",
   "version": "1.1.2",
   "manifest_version": 2,
-  "default_locale": "el",
-  "description": "Προειδοποιεί για πιθανώς αναξιόπιστες ελληνικές πηγές ενημέρωσης.",
+  "default_locale": "en",
+  "description": "Προειδοποιεί για ελληνικές πηγές ενημέρωσης που έχουν υπάρξει αναξιόπιστες.",
   "homepage_url": "http://ellinikahoaxes.gr",
   "permissions": [
     "*://unshorten.me/*",
