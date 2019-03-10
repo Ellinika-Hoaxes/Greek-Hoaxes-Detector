@@ -120,6 +120,24 @@
     "3rd type" : "",
     "Source Notes (things to know?)" : ""
   },
+  "xorisorianews.gr" : {
+    "type" : "con",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "e-rodios.blogspot.com" : {
+    "type" : "con",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "atheatignosi.blogspot.com" : {
+    "type" : "con",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
 
   "emedi.gr" : {
     "type" : "ps",
@@ -266,6 +284,48 @@
     "3rd type" : "",
     "Source Notes (things to know?)" : ""
   },
+  "crete-news.gr" : {
+    "type" : "mis",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "dynatielladanews.gr" : {
+    "type" : "mis",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "newsone.gr" : {
+    "type" : "mis",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "ksipnistere.com" : {
+    "type" : "mis",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "hellas-now.com" : {
+    "type" : "mis",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "iellada.gr" : {
+    "type" : "mis",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "newsthessaloniki.gr" : {
+    "type" : "mis",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
 
   "ethnikosmaxitis.gr" : {
     "type" : "hate",
@@ -292,6 +352,12 @@
     "Source Notes (things to know?)" : ""
   },
   "ellinikiafipnisis.blogspot.com" : {
+    "type" : "hate",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "eleftheriskepsii.blogspot.com" : {
     "type" : "hate",
     "2nd type" : "",
     "3rd type" : "",
@@ -417,5 +483,35 @@
     "2nd type" : "",
     "3rd type" : "",
     "Source Notes (things to know?)" : ""
-  }
+  },
+  "votegreece.gr" : {
+    "type" : "cl",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "parapona-rodou.blogspot.com" : {
+    "type" : "cl",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "amfipolinews.blogspot.com" : {
+    "type" : "cl",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "kentripotideas.blogspot.com" : {
+    "type" : "cl",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
+  "unpolitical.gr" : {
+    "type" : "cl",
+    "2nd type" : "",
+    "3rd type" : "",
+    "Source Notes (things to know?)" : ""
+  },
 }

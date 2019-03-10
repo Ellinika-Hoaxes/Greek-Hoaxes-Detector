@@ -167,6 +167,8 @@ BSDetector.prototype = {
         if (self === top) {
             switch (this.currentUrl) {
             case 'www.facebook.com':
+            case 'www.m.facebook.com':
+            case 'm.facebook.com':
             case 'facebook.com':
                 this.siteId = 'facebook';
                 break;
@@ -457,11 +459,18 @@ BSDetector.prototype = {
             if ($(this).attr('data-is-bs') !== 'true') {
 
                 urlHost = bsd.getHost($(this));
+
+                // console.log('urlHost: ' + urlHost);
+
                 // check if link is in list of bad domains
                 bsd.bsId = bsd.data[urlHost];
 
                 // if link is in bad domain list, tag it
+
+                // console.log('data: ' + bsd.bsId);
+
                 if (typeof bsd.bsId !== 'undefined') {
+                  // console.log('data-is-bs-2');
                   bsd.articles_fb = '<a target="_blank" href="http://ellinikahoaxes.gr/?s=' + urlHost + '">ΠΑΡΑΔΕΙΓΜΑΤΑ ΑΡΘΡΩΝ</a>';
                     $(this).attr('data-is-bs', true);
                     $(this).attr('data-bs-type', bsd.bsId.type);
@@ -510,11 +519,16 @@ BSDetector.prototype = {
      */
     setAlertOnPosts: function () {
 
-        'use strict';
+      // console.log('setAlertOnPost');
 
-        bsd.targetLinks();
+      'use strict';
+
+      bsd.targetLinks();
 
         $('a[data-is-bs="true"]').each(function () {
+
+          // console.log('setAlertOnPost2');
+
             bsd.dataType = $(this).attr('data-bs-type');
             bsd.warningMsg();
 
@@ -525,6 +539,9 @@ BSDetector.prototype = {
             case 'facebook':
                 if ($(this).parents('._1dwg').length >= 0) {
                     bsd.flagPost($(this).closest('.mtm'));
+                }
+                if ($(this).parents('.story_body_container').length >= 0) {
+                    bsd.flagPost($(this).closest('._5rgu'));
                 }
                 if ($(this).parents('.UFICommentContent').length >= 0) {
                     bsd.flagPost($(this).closest('.UFICommentBody'));

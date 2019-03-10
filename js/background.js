@@ -3,7 +3,6 @@
  * B.S. Detector v0.2.7 (http://bsdetector.tech)
  * Copyright 2016 The B.S. Detector Authors (https://github.com/selfagency/bs-detector/graphs/contributors)
  * Licensed under LGPL-3.0 (https://github.com/selfagency/bs-detector/blob/master/LICENSE)
-
 --- Adjustments by: ---
   * Andronikos Koutroumpelis, researcher at Ellinika Hoaxes (http://ellinikahoaxes.gr)
   * Greek Hoaxes Detector v1.3 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector)
