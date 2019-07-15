@@ -175,6 +175,11 @@ BSDetector.prototype = {
             case 'twitter.com':
                 this.siteId = 'twitter';
                 break;
+            case 'old.reddit.com':
+            case 'www.reddit.com':
+            case 'reddit.com':
+                this.siteId = 'reddit';
+                break;
             default:
                 this.siteId = 'none';
                 // Try to find the site in data
@@ -425,9 +430,17 @@ BSDetector.prototype = {
 
         'use strict';
 
-        // find and label external links
-        $('a[href]:not([href^="#"]), a[data-expanded-url]').each(function () {
+        var $selector;
 
+        // find and label external links
+        if (bsd.siteId === 'reddit') {
+            // selector for the new and old design and the article view
+            $selector = $('article div[data-click-id="body"] a:not(:has(img)), #siteTable div[data-type="link"] a:not(:has(img)), [data-test-id="post-content"] a:not(:has(img))');
+        } else {
+            $selector = $('a[href]:not([href^="#"]), a[data-expanded-url]');
+        }
+
+        $selector.each(function () {
             var
                 testLink = '',
                 thisUrl = '',
@@ -499,7 +512,7 @@ BSDetector.prototype = {
             } else {
 
               $badlinkWrapper.before($('<div class="bs-alert-inline">').html(this.warnMessage));
-              $badlinkWrapper.append($('<div class="bs-alert-inline">').html(this.articles_fb));
+              $badlinkWrapper.after($('<div class="bs-alert-inline">').html(this.articles_fb));
 
               // $badlinkWrapper.before($('<div class="bs-alert-inline">').html(this.warnMessage));
               // $("div.bs-alert-inline").append($(html(this.articles)));
@@ -551,6 +564,9 @@ BSDetector.prototype = {
                 if ($(this).parents('.tweet').length >= 0) {
                     bsd.flagPost($(this).closest('.js-tweet-text-container'));
                 }
+                break;
+            case 'reddit':
+                bsd.flagPost($(this).parent());
                 break;
             case 'badlink':
             case 'none':
@@ -672,7 +688,7 @@ if (window === window.top || url2Domain(window.location.hostname) === 'twitter.c
         'use strict';
 
         // If we're ready, start loading data.
-        if (state != 'undefined' && state.sites != 'undefined' && state.shorteners != 'undefined') {
+        if (typeof state != 'undefined' && typeof state.sites != 'undefined' && typeof state.shorteners != 'undefined') {
             bsd.data = state.sites;
             bsd.shorts = state.shorteners;
 
