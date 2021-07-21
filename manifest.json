@@ -1,14 +1,12 @@
 {
   "name": "Greek Hoaxes Detector",
   "short_name" : "GHD",
-  "version": "1.4",
+  "version": "2",
   "manifest_version": 2,
-  "default_locale": "en",
+  "default_locale": "el",
   "description": "Προειδοποιεί για ελληνικές πηγές ενημέρωσης που έχουν υπάρξει αναξιόπιστες.",
-  "homepage_url": "http://ellinikahoaxes.gr",
+  "homepage_url": "https://www.ellinikahoaxes.gr",
   "permissions": [
-    "*://unshorten.me/*",
-    "webRequest",
     "webNavigation"
   ],
   "icons": {
@@ -24,13 +22,13 @@
     "persistent": true
   },
   "content_scripts": [ {
-     "css": [ "css/bs-detector.css" ],
+     "css": [ "css/gh-detector.css" ],
      "js": [
        "js/utils.js",
        "js/lib/jquery-3.1.1.slim.min.js",
        "js/lib/mutation-summary.js",
        "js/lib/jquery.mutation-summary.js",
-       "js/bs-detector.js"
+       "js/gh-detector.js"
      ],
      "matches": [ "*://*/*" ],
      "all_frames": true,

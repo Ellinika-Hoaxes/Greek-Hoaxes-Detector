@@ -1,0 +1,81 @@
+.gh-alert {
+  background: rgb(121, 0, 0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  /* height: 28px; */
+  left: 0;
+  margin: 10 10 10 10;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100vw;
+  z-index: 2147483647;
+}
+
+.gh-alert span {
+  color: #fff;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+.gh-alert.gh-warning {
+  background: #ffff00;
+}
+
+.gh-alert.gh-caution span {
+  color: #000;
+}
+
+.gh-alert-close {
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  height: 28px;
+  line-height: 1.5em;
+  margin: 2px 6px 0;
+  padding: 0 6px;
+}
+
+.gh-warning .gh-alert-close {
+  color: #000;
+  padding: 0 6px;
+}
+
+.gh-alert-shift {
+  padding-top: 28px;
+}
+
+.gh-alert-inline {
+  background: rgb(121, 0, 0);
+  border: 1px solid #800000;
+  border-radius: .25em;
+  color: white;
+  text-align: center;
+  margin: 8px 0;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.gh-alert-inline a {
+  color: #fcff00;
+  text-decoration: underline;
+}
+
+.gh-alert-inline.gh-caution {
+  background: rgba(255, 255, 00, .25);
+  border: 1px solid #ffff00;
+  color: #000000;
+}
+
+.gh-alert a,.gh-alert a:visited, .gh-alert a:link {
+  text-decoration: underline;
+  color: #fcff00 !important;
+}
+
+.gh-alert-span a {
+  display: inline;
+}

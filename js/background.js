@@ -1,11 +1,12 @@
 /*!
---- The vast majority of the code used was from: ---
- * B.S. Detector v0.2.7 (http://bsdetector.tech)
- * Copyright 2016 The B.S. Detector Authors (https://github.com/selfagency/bs-detector/graphs/contributors)
- * Licensed under LGPL-3.0 (https://github.com/selfagency/bs-detector/blob/master/LICENSE)
+--- The basis of the code used is from: ---
+ * B.S. Detector v0.2.7 (https://archive.is/20170122012534/http://bsdetector.tech/)
+ * Copyright 2016 The B.S. Detector Authors (https://archive.ph/20200627200743/https://github.com/selfagency/gh-detector/graphs/contributors)
+ * Licensed under LGPL-3.0
+
 --- Adjustments by: ---
-  * Andronikos Koutroumpelis, researcher at Ellinika Hoaxes (http://ellinikahoaxes.gr)
-  * Greek Hoaxes Detector v1.3 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector)
+  * Andronikos Koutroumpelis, fact-checker at Ellinika Hoaxes (https://ellinikahoaxes.gr)
+  * Greek Hoaxes Detector v2 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector)
   * Licensed under LGPL-3.0 (https://github.com/Ellinika-Hoaxes/Greek-Hoaxes-Detector/blob/master/LICENSE)
  */
 
@@ -60,7 +61,8 @@ var
         'trib.al',
         'u.to',
         'v.gd',
-        'x.co'
+        'x.co',
+        't.co'
     ],
     toExpand = [],
     expanded = [];
@@ -117,7 +119,7 @@ xhReq(chrome.extension.getURL('/data/data.json'), function (file) {
 
 
 /**
- * @description Add listeners to be called from bs-detector.js.
+ * @description Add listeners to be called from gh-detector.js.
  * @method chrome.runtime.onMessage.addListener
  * @param {function}
  */
@@ -133,13 +135,15 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             });
         break;
         case 'expandLinks':
+            //As of July 2021, the unshorten.me API only allows for 10 calls, so this feature is being decommissioned, which excludes Twitter links
+            
             // Call link expanding, returning only
             // once all the links have been completed.
-            expandLinks(request, function () {
-                sendResponse({
-                    expandedLinks: expanded
-                });
-            });
+            // expandLinks(request, function () {
+            //     sendResponse({
+            //         expandedLinks: expanded
+            //     });
+            // });
         break;
     }
     // Support asynchronous response.
